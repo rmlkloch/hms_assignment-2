@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Documents\\# C #\\hms_assignment-2\\hms\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C1E7C7F0-2847-460A-88EB-FA96C5016CF0}|hms\\hms.csproj|C:\\Users\\user\\Documents\\# C #\\hms_assignment-2\\hms\\hms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C1E7C7F0-2847-460A-88EB-FA96C5016CF0}|hms\\hms.csproj|solutionrelative:hms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C1E7C7F0-2847-460A-88EB-FA96C5016CF0}|hms\\hms.csproj|C:\\Users\\user\\Documents\\# C #\\hms_assignment-2\\hms\\hms\\firstlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C1E7C7F0-2847-460A-88EB-FA96C5016CF0}|hms\\hms.csproj|solutionrelative:hms\\firstlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1E7C7F0-2847-460A-88EB-FA96C5016CF0}|hms\\hms.csproj|C:\\Users\\user\\Documents\\# C #\\hms_assignment-2\\hms\\hms\\firstlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1E7C7F0-2847-460A-88EB-FA96C5016CF0}|hms\\hms.csproj|solutionrelative:hms\\firstlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1E7C7F0-2847-460A-88EB-FA96C5016CF0}|hms\\hms.csproj|c:\\users\\user\\documents\\# c #\\hms_assignment-2\\hms\\hms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1E7C7F0-2847-460A-88EB-FA96C5016CF0}|hms\\hms.csproj|solutionrelative:hms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +26,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\# C #\\hms_assignment-2\\hms\\hms\\Form1.cs",
+              "RelativeDocumentMoniker": "hms\\Form1.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\# C #\\hms_assignment-2\\hms\\hms\\Form1.cs",
+              "RelativeToolTip": "hms\\Form1.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAswFwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T08:23:32.082Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "firstlogin.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\# C #\\hms_assignment-2\\hms\\hms\\firstlogin.cs",
+              "RelativeDocumentMoniker": "hms\\firstlogin.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\# C #\\hms_assignment-2\\hms\\hms\\firstlogin.cs",
+              "RelativeToolTip": "hms\\firstlogin.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T08:27:57.475Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -23,6 +63,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\# C #\\hms_assignment-2\\hms\\hms\\Form1.cs",
+              "RelativeDocumentMoniker": "hms\\Form1.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\# C #\\hms_assignment-2\\hms\\hms\\Form1.cs [Design]",
+              "RelativeToolTip": "hms\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T08:23:27.42Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "firstlogin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\# C #\\hms_assignment-2\\hms\\hms\\firstlogin.cs",
               "RelativeDocumentMoniker": "hms\\firstlogin.cs",

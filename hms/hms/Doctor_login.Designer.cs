@@ -37,7 +37,6 @@
             this.login = new System.Windows.Forms.Button();
             this.reset = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,7 +93,7 @@
             // 
             // login
             // 
-            this.login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.login.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login.Location = new System.Drawing.Point(271, 254);
             this.login.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -107,7 +106,7 @@
             // 
             // reset
             // 
-            this.reset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.reset.BackColor = System.Drawing.Color.Salmon;
             this.reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reset.Location = new System.Drawing.Point(410, 253);
             this.reset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -129,22 +128,12 @@
             this.back.UseVisualStyleBackColor = true;
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(532, 415);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // DoctorLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(830, 467);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.back);
             this.Controls.Add(this.reset);
             this.Controls.Add(this.login);
@@ -174,6 +163,5 @@
         private System.Windows.Forms.Button login;
         private System.Windows.Forms.Button reset;
         private System.Windows.Forms.Button back;
-        private System.Windows.Forms.Button button1;
     }
 }

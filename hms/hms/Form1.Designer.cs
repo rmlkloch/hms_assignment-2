@@ -42,9 +42,10 @@
             this.ulog.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ulog.BackColor = System.Drawing.Color.LightGreen;
             this.ulog.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ulog.Location = new System.Drawing.Point(603, 331);
+            this.ulog.Location = new System.Drawing.Point(590, 122);
+            this.ulog.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ulog.Name = "ulog";
-            this.ulog.Size = new System.Drawing.Size(124, 50);
+            this.ulog.Size = new System.Drawing.Size(119, 40);
             this.ulog.TabIndex = 0;
             this.ulog.Text = "Login";
             this.ulog.UseVisualStyleBackColor = false;
@@ -57,9 +58,10 @@
             this.usign.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.usign.BackColor = System.Drawing.Color.SlateBlue;
             this.usign.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usign.Location = new System.Drawing.Point(438, 331);
+            this.usign.Location = new System.Drawing.Point(462, 122);
+            this.usign.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.usign.Name = "usign";
-            this.usign.Size = new System.Drawing.Size(118, 50);
+            this.usign.Size = new System.Drawing.Size(112, 40);
             this.usign.TabIndex = 5;
             this.usign.Text = "Signup";
             this.usign.UseVisualStyleBackColor = false;
@@ -68,24 +70,27 @@
             // 
             // usercmb
             // 
+            this.usercmb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.usercmb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usercmb.FormattingEnabled = true;
             this.usercmb.Items.AddRange(new object[] {
             "Doctor",
             "Nurse"});
-            this.usercmb.Location = new System.Drawing.Point(539, 204);
+            this.usercmb.Location = new System.Drawing.Point(545, 55);
+            this.usercmb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.usercmb.Name = "usercmb";
-            this.usercmb.Size = new System.Drawing.Size(202, 41);
+            this.usercmb.Size = new System.Drawing.Size(180, 37);
             this.usercmb.TabIndex = 9;
             this.usercmb.SelectedIndexChanged += new System.EventHandler(this.usercmb_SelectedIndexChanged);
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(411, 207);
+            this.label4.Location = new System.Drawing.Point(444, 58);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 33);
+            this.label4.Size = new System.Drawing.Size(64, 29);
             this.label4.TabIndex = 10;
             this.label4.Text = "User";
             // 
@@ -93,9 +98,10 @@
             // 
             this.back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.back.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.back.Location = new System.Drawing.Point(757, 488);
+            this.back.Location = new System.Drawing.Point(673, 390);
+            this.back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(101, 36);
+            this.back.Size = new System.Drawing.Size(90, 29);
             this.back.TabIndex = 16;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = false;
@@ -103,16 +109,17 @@
             // 
             // Form12
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(900, 563);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.back);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.usercmb);
             this.Controls.Add(this.usign);
             this.Controls.Add(this.ulog);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form12";
             this.Text = "Form12";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
