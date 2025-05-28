@@ -37,6 +37,7 @@
             this.login = new System.Windows.Forms.Button();
             this.reset = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,7 +49,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(639, 103);
+            this.pictureBox1.Size = new System.Drawing.Size(830, 103);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -58,7 +59,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(164, 136);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 29);
+            this.label1.Size = new System.Drawing.Size(76, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Staff ID";
             // 
@@ -68,7 +69,7 @@
             this.staffid.Location = new System.Drawing.Point(290, 133);
             this.staffid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.staffid.Name = "staffid";
-            this.staffid.Size = new System.Drawing.Size(181, 35);
+            this.staffid.Size = new System.Drawing.Size(181, 30);
             this.staffid.TabIndex = 2;
             this.staffid.TextChanged += new System.EventHandler(this.staffid_TextChanged);
             // 
@@ -78,7 +79,7 @@
             this.Password.Location = new System.Drawing.Point(290, 185);
             this.Password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(181, 35);
+            this.Password.Size = new System.Drawing.Size(181, 30);
             this.Password.TabIndex = 4;
             // 
             // label2
@@ -87,7 +88,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(164, 188);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 29);
+            this.label2.Size = new System.Drawing.Size(98, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Password";
             // 
@@ -128,12 +129,22 @@
             this.back.UseVisualStyleBackColor = true;
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(532, 415);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // DoctorLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(639, 343);
+            this.ClientSize = new System.Drawing.Size(830, 467);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.back);
             this.Controls.Add(this.reset);
             this.Controls.Add(this.login);
@@ -163,5 +174,6 @@
         private System.Windows.Forms.Button login;
         private System.Windows.Forms.Button reset;
         private System.Windows.Forms.Button back;
+        private System.Windows.Forms.Button button1;
     }
 }
