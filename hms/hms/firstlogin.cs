@@ -12,6 +12,8 @@ namespace hms
 {
     public partial class Form1: Form
     {
+        public static System.Drawing.Size PreviousFormSize = new System.Drawing.Size(800, 600); // Default Size එකක් දෙන්න පුළුවන්
+        public static System.Drawing.Point PreviousFormLocation = new System.Drawing.Point(100, 100); // Default Location එකක් දෙන්න පුළුවන්
         public Form1()
         {
             InitializeComponent();
@@ -23,16 +25,26 @@ namespace hms
 
             if (selectedUserType == "Patient")
             {
+                PreviousFormSize = this.Size;
+                PreviousFormLocation = this.Location;
 
                 Form3 patientForm = new Form3();
+                patientForm.StartPosition = FormStartPosition.Manual;
+                patientForm.Location = PreviousFormLocation;
+                patientForm.Size = PreviousFormSize;
                 patientForm.Show();
                 this.Hide();
             }
             else if (selectedUserType == "Staff")
             {
+                PreviousFormSize = this.Size; 
+                PreviousFormLocation = this.Location;
 
-                Form12 Form12 = new Form12();
-                Form12.Show();
+                Form12 form12 = new Form12();
+                form12.StartPosition = FormStartPosition.Manual;
+                form12.Location = PreviousFormLocation; 
+                form12.Size = PreviousFormSize;
+                form12.Show();
                 this.Hide();
             }
             else
