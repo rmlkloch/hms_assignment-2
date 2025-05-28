@@ -63,11 +63,12 @@
             // back
             // 
             this.back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.back.BackColor = System.Drawing.Color.SandyBrown;
+            this.back.BackColor = System.Drawing.Color.Wheat;
             this.back.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.back.Location = new System.Drawing.Point(728, 474);
+            this.back.Location = new System.Drawing.Point(647, 379);
+            this.back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(127, 61);
+            this.back.Size = new System.Drawing.Size(113, 49);
             this.back.TabIndex = 15;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = false;
@@ -78,15 +79,16 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(14, 17);
+            this.tabControl1.Location = new System.Drawing.Point(12, 14);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(873, 429);
+            this.tabControl1.Size = new System.Drawing.Size(776, 343);
             this.tabControl1.TabIndex = 16;
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.SeaShell;
+            this.tabPage1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPage1.Controls.Add(this.label9);
             this.tabPage1.Controls.Add(this.nextButton);
             this.tabPage1.Controls.Add(this.comboBox2);
@@ -95,10 +97,11 @@
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage1.Location = new System.Drawing.Point(4, 34);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage1.Size = new System.Drawing.Size(865, 391);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage1.Size = new System.Drawing.Size(768, 310);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Service Details";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
@@ -106,18 +109,19 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(87, 35);
+            this.label9.Location = new System.Drawing.Point(77, 28);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(129, 25);
+            this.label9.Size = new System.Drawing.Size(110, 20);
             this.label9.TabIndex = 9;
             this.label9.Text = "Patient Name";
             // 
             // nextButton
             // 
-            this.nextButton.BackColor = System.Drawing.Color.SandyBrown;
-            this.nextButton.Location = new System.Drawing.Point(525, 223);
+            this.nextButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.nextButton.Location = new System.Drawing.Point(467, 178);
+            this.nextButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nextButton.Name = "nextButton";
-            this.nextButton.Size = new System.Drawing.Size(111, 65);
+            this.nextButton.Size = new System.Drawing.Size(99, 52);
             this.nextButton.TabIndex = 8;
             this.nextButton.Text = "Next >";
             this.nextButton.UseVisualStyleBackColor = false;
@@ -125,9 +129,10 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(264, 152);
+            this.comboBox2.Location = new System.Drawing.Point(235, 122);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(136, 33);
+            this.comboBox2.Size = new System.Drawing.Size(121, 28);
             this.comboBox2.TabIndex = 7;
             this.comboBox2.Visible = false;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
@@ -139,25 +144,27 @@
             "Channeling",
             "Pharmacy",
             "Reports"});
-            this.comboBox1.Location = new System.Drawing.Point(264, 95);
+            this.comboBox1.Location = new System.Drawing.Point(235, 76);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(136, 33);
+            this.comboBox1.Size = new System.Drawing.Size(121, 28);
             this.comboBox1.TabIndex = 6;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_2);
             // 
             // patientNameTextBox
             // 
-            this.patientNameTextBox.Location = new System.Drawing.Point(264, 32);
+            this.patientNameTextBox.Location = new System.Drawing.Point(235, 26);
+            this.patientNameTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.patientNameTextBox.Name = "patientNameTextBox";
-            this.patientNameTextBox.Size = new System.Drawing.Size(172, 30);
+            this.patientNameTextBox.Size = new System.Drawing.Size(153, 26);
             this.patientNameTextBox.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(82, 155);
+            this.label2.Location = new System.Drawing.Point(73, 124);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 25);
+            this.label2.Size = new System.Drawing.Size(65, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "Doctor:";
             this.label2.Visible = false;
@@ -165,15 +172,15 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(82, 98);
+            this.label1.Location = new System.Drawing.Point(73, 78);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 25);
+            this.label1.Size = new System.Drawing.Size(111, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Service Type:";
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.tabPage2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Controls.Add(this.paymentMethodComboBox);
             this.tabPage2.Controls.Add(this.label7);
@@ -181,46 +188,49 @@
             this.tabPage2.Controls.Add(this.cashierDetailsGroupBox);
             this.tabPage2.Controls.Add(this.cardDetailsGroupBox);
             this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 34);
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage2.Size = new System.Drawing.Size(865, 391);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage2.Size = new System.Drawing.Size(768, 310);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Payment Method";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(20, 34);
+            this.label8.Location = new System.Drawing.Point(18, 27);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(159, 25);
+            this.label8.Size = new System.Drawing.Size(134, 20);
             this.label8.TabIndex = 6;
             this.label8.Text = "Payment method";
             // 
             // paymentMethodComboBox
             // 
             this.paymentMethodComboBox.FormattingEnabled = true;
-            this.paymentMethodComboBox.Location = new System.Drawing.Point(204, 37);
+            this.paymentMethodComboBox.Location = new System.Drawing.Point(181, 30);
+            this.paymentMethodComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.paymentMethodComboBox.Name = "paymentMethodComboBox";
-            this.paymentMethodComboBox.Size = new System.Drawing.Size(136, 33);
+            this.paymentMethodComboBox.Size = new System.Drawing.Size(121, 28);
             this.paymentMethodComboBox.TabIndex = 5;
             this.paymentMethodComboBox.SelectedIndexChanged += new System.EventHandler(this.paymentMethodComboBox_SelectedIndexChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(51, 249);
+            this.label7.Location = new System.Drawing.Point(45, 199);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(178, 25);
+            this.label7.Size = new System.Drawing.Size(149, 20);
             this.label7.TabIndex = 4;
             this.label7.Text = "Total Amount: 0.00";
             // 
             // payButton
             // 
-            this.payButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.payButton.Location = new System.Drawing.Point(58, 125);
+            this.payButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.payButton.Location = new System.Drawing.Point(52, 100);
+            this.payButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.payButton.Name = "payButton";
-            this.payButton.Size = new System.Drawing.Size(141, 65);
+            this.payButton.Size = new System.Drawing.Size(125, 52);
             this.payButton.TabIndex = 3;
             this.payButton.Text = "Pay";
             this.payButton.UseVisualStyleBackColor = false;
@@ -230,9 +240,11 @@
             // 
             this.cashierDetailsGroupBox.Controls.Add(this.cashierIdTextBox);
             this.cashierDetailsGroupBox.Controls.Add(this.label6);
-            this.cashierDetailsGroupBox.Location = new System.Drawing.Point(380, 249);
+            this.cashierDetailsGroupBox.Location = new System.Drawing.Point(338, 199);
+            this.cashierDetailsGroupBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cashierDetailsGroupBox.Name = "cashierDetailsGroupBox";
-            this.cashierDetailsGroupBox.Size = new System.Drawing.Size(411, 131);
+            this.cashierDetailsGroupBox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cashierDetailsGroupBox.Size = new System.Drawing.Size(365, 105);
             this.cashierDetailsGroupBox.TabIndex = 2;
             this.cashierDetailsGroupBox.TabStop = false;
             this.cashierDetailsGroupBox.Text = "Cashier Details";
@@ -240,17 +252,18 @@
             // 
             // cashierIdTextBox
             // 
-            this.cashierIdTextBox.Location = new System.Drawing.Point(153, 46);
+            this.cashierIdTextBox.Location = new System.Drawing.Point(136, 37);
+            this.cashierIdTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cashierIdTextBox.Name = "cashierIdTextBox";
-            this.cashierIdTextBox.Size = new System.Drawing.Size(112, 30);
+            this.cashierIdTextBox.Size = new System.Drawing.Size(100, 26);
             this.cashierIdTextBox.TabIndex = 1;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(8, 28);
+            this.label6.Location = new System.Drawing.Point(7, 22);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(110, 25);
+            this.label6.Size = new System.Drawing.Size(94, 20);
             this.label6.TabIndex = 0;
             this.label6.Text = "Cashier ID:";
             // 
@@ -262,9 +275,11 @@
             this.cardDetailsGroupBox.Controls.Add(this.cardNumberTextBox);
             this.cardDetailsGroupBox.Controls.Add(this.label4);
             this.cardDetailsGroupBox.Controls.Add(this.label3);
-            this.cardDetailsGroupBox.Location = new System.Drawing.Point(380, 18);
+            this.cardDetailsGroupBox.Location = new System.Drawing.Point(338, 14);
+            this.cardDetailsGroupBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cardDetailsGroupBox.Name = "cardDetailsGroupBox";
-            this.cardDetailsGroupBox.Size = new System.Drawing.Size(464, 192);
+            this.cardDetailsGroupBox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cardDetailsGroupBox.Size = new System.Drawing.Size(412, 154);
             this.cardDetailsGroupBox.TabIndex = 1;
             this.cardDetailsGroupBox.TabStop = false;
             this.cardDetailsGroupBox.Text = "Card Details";
@@ -273,59 +288,63 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 38);
+            this.label5.Location = new System.Drawing.Point(18, 30);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(135, 25);
+            this.label5.Size = new System.Drawing.Size(114, 20);
             this.label5.TabIndex = 4;
             this.label5.Text = "Card Number:";
             // 
             // cardExpiryTextBox
             // 
-            this.cardExpiryTextBox.Location = new System.Drawing.Point(208, 82);
+            this.cardExpiryTextBox.Location = new System.Drawing.Point(185, 66);
+            this.cardExpiryTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cardExpiryTextBox.Name = "cardExpiryTextBox";
-            this.cardExpiryTextBox.Size = new System.Drawing.Size(188, 30);
+            this.cardExpiryTextBox.Size = new System.Drawing.Size(168, 26);
             this.cardExpiryTextBox.TabIndex = 3;
             // 
             // cardCVVTextBox
             // 
-            this.cardCVVTextBox.Location = new System.Drawing.Point(208, 134);
+            this.cardCVVTextBox.Location = new System.Drawing.Point(185, 107);
+            this.cardCVVTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cardCVVTextBox.Name = "cardCVVTextBox";
-            this.cardCVVTextBox.Size = new System.Drawing.Size(188, 30);
+            this.cardCVVTextBox.Size = new System.Drawing.Size(168, 26);
             this.cardCVVTextBox.TabIndex = 2;
             // 
             // cardNumberTextBox
             // 
-            this.cardNumberTextBox.Location = new System.Drawing.Point(208, 38);
+            this.cardNumberTextBox.Location = new System.Drawing.Point(185, 30);
+            this.cardNumberTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cardNumberTextBox.Name = "cardNumberTextBox";
-            this.cardNumberTextBox.Size = new System.Drawing.Size(188, 30);
+            this.cardNumberTextBox.Size = new System.Drawing.Size(168, 26);
             this.cardNumberTextBox.TabIndex = 1;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 138);
+            this.label4.Location = new System.Drawing.Point(13, 110);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 25);
+            this.label4.Size = new System.Drawing.Size(48, 20);
             this.label4.TabIndex = 0;
             this.label4.Text = "CVV:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 82);
+            this.label3.Location = new System.Drawing.Point(13, 66);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 25);
+            this.label3.Size = new System.Drawing.Size(101, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "Expiry Date:";
             // 
             // paymentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MediumPurple;
-            this.ClientSize = new System.Drawing.Size(900, 563);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.back);
             this.Controls.Add(this.tabControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "paymentForm";
             this.Text = "payment";
             this.Load += new System.EventHandler(this.patient_Load);

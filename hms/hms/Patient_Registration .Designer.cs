@@ -75,7 +75,7 @@
             // 
             // back_button
             // 
-            this.back_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.back_button.BackColor = System.Drawing.Color.Wheat;
             this.back_button.Location = new System.Drawing.Point(546, 374);
             this.back_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.back_button.Name = "back_button";
@@ -101,7 +101,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabPage1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPage1.Controls.Add(this.textBox1);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.marstatus_combobox);
@@ -237,7 +237,7 @@
             // 
             // id_searchbutton
             // 
-            this.id_searchbutton.BackColor = System.Drawing.Color.Lime;
+            this.id_searchbutton.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.id_searchbutton.Location = new System.Drawing.Point(480, 127);
             this.id_searchbutton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.id_searchbutton.Name = "id_searchbutton";
@@ -267,7 +267,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabPage2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPage2.Controls.Add(this.email_textbox);
             this.tabPage2.Controls.Add(this.email_label);
             this.tabPage2.Controls.Add(this.phonenumber_textbox);
@@ -338,7 +338,7 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabPage3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPage3.Controls.Add(this.weight_textbox);
             this.tabPage3.Controls.Add(this.weight_lbl);
             this.tabPage3.Controls.Add(this.height_textbox);
@@ -388,7 +388,7 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabPage4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPage4.Controls.Add(this.registerpatient_btn);
             this.tabPage4.Controls.Add(this.removealergy_btn);
             this.tabPage4.Controls.Add(this.allergy_listbox);
@@ -404,7 +404,7 @@
             // 
             // registerpatient_btn
             // 
-            this.registerpatient_btn.BackColor = System.Drawing.Color.Lime;
+            this.registerpatient_btn.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.registerpatient_btn.Location = new System.Drawing.Point(457, 22);
             this.registerpatient_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.registerpatient_btn.Name = "registerpatient_btn";
@@ -416,7 +416,7 @@
             // 
             // removealergy_btn
             // 
-            this.removealergy_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.removealergy_btn.BackColor = System.Drawing.Color.Salmon;
             this.removealergy_btn.Location = new System.Drawing.Point(130, 212);
             this.removealergy_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.removealergy_btn.Name = "removealergy_btn";
@@ -430,15 +430,15 @@
             // 
             this.allergy_listbox.FormattingEnabled = true;
             this.allergy_listbox.ItemHeight = 20;
-            this.allergy_listbox.Location = new System.Drawing.Point(108, 108);
+            this.allergy_listbox.Location = new System.Drawing.Point(101, 109);
             this.allergy_listbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.allergy_listbox.Name = "allergy_listbox";
-            this.allergy_listbox.Size = new System.Drawing.Size(448, 64);
+            this.allergy_listbox.Size = new System.Drawing.Size(395, 64);
             this.allergy_listbox.TabIndex = 3;
             // 
             // Allergy_btn
             // 
-            this.Allergy_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.Allergy_btn.BackColor = System.Drawing.Color.MistyRose;
             this.Allergy_btn.Location = new System.Drawing.Point(375, 212);
             this.Allergy_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Allergy_btn.Name = "Allergy_btn";
@@ -476,7 +476,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(856, 450);
             this.Controls.Add(this.back_button);
             this.Controls.Add(this.tbc);

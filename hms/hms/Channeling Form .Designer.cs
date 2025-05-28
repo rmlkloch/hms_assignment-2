@@ -54,6 +54,7 @@
             // 
             // patientdetails_grpbox
             // 
+            this.patientdetails_grpbox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.patientdetails_grpbox.Controls.Add(this.name_txtbox);
             this.patientdetails_grpbox.Controls.Add(this.name_lbl);
             this.patientdetails_grpbox.Controls.Add(this.searchpatient_btn);
@@ -63,7 +64,7 @@
             this.patientdetails_grpbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.patientdetails_grpbox.Name = "patientdetails_grpbox";
             this.patientdetails_grpbox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.patientdetails_grpbox.Size = new System.Drawing.Size(611, 144);
+            this.patientdetails_grpbox.Size = new System.Drawing.Size(751, 144);
             this.patientdetails_grpbox.TabIndex = 0;
             this.patientdetails_grpbox.TabStop = false;
             this.patientdetails_grpbox.Text = "Patient Details";
@@ -74,7 +75,7 @@
             this.name_txtbox.Location = new System.Drawing.Point(131, 87);
             this.name_txtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.name_txtbox.Name = "name_txtbox";
-            this.name_txtbox.Size = new System.Drawing.Size(160, 30);
+            this.name_txtbox.Size = new System.Drawing.Size(160, 26);
             this.name_txtbox.TabIndex = 5;
             // 
             // name_lbl
@@ -82,13 +83,13 @@
             this.name_lbl.AutoSize = true;
             this.name_lbl.Location = new System.Drawing.Point(40, 87);
             this.name_lbl.Name = "name_lbl";
-            this.name_lbl.Size = new System.Drawing.Size(64, 25);
+            this.name_lbl.Size = new System.Drawing.Size(53, 20);
             this.name_lbl.TabIndex = 4;
             this.name_lbl.Text = "Name";
             // 
             // searchpatient_btn
             // 
-            this.searchpatient_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.searchpatient_btn.BackColor = System.Drawing.Color.MistyRose;
             this.searchpatient_btn.Location = new System.Drawing.Point(330, 54);
             this.searchpatient_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchpatient_btn.Name = "searchpatient_btn";
@@ -103,7 +104,7 @@
             this.patientid_textbox.Location = new System.Drawing.Point(131, 39);
             this.patientid_textbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.patientid_textbox.Name = "patientid_textbox";
-            this.patientid_textbox.Size = new System.Drawing.Size(160, 30);
+            this.patientid_textbox.Size = new System.Drawing.Size(160, 26);
             this.patientid_textbox.TabIndex = 1;
             // 
             // patientid_lbl
@@ -111,12 +112,13 @@
             this.patientid_lbl.AutoSize = true;
             this.patientid_lbl.Location = new System.Drawing.Point(36, 39);
             this.patientid_lbl.Name = "patientid_lbl";
-            this.patientid_lbl.Size = new System.Drawing.Size(96, 25);
+            this.patientid_lbl.Size = new System.Drawing.Size(83, 20);
             this.patientid_lbl.TabIndex = 0;
             this.patientid_lbl.Text = "Patient ID";
             // 
             // appoinmentdetails_grpbox
             // 
+            this.appoinmentdetails_grpbox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.appoinmentdetails_grpbox.Controls.Add(this.appoinment_txtbox);
             this.appoinmentdetails_grpbox.Controls.Add(this.appoinmentfee_label);
             this.appoinmentdetails_grpbox.Controls.Add(this.timeslot_combobox);
@@ -131,17 +133,18 @@
             this.appoinmentdetails_grpbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.appoinmentdetails_grpbox.Name = "appoinmentdetails_grpbox";
             this.appoinmentdetails_grpbox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.appoinmentdetails_grpbox.Size = new System.Drawing.Size(751, 197);
+            this.appoinmentdetails_grpbox.Size = new System.Drawing.Size(751, 267);
             this.appoinmentdetails_grpbox.TabIndex = 1;
             this.appoinmentdetails_grpbox.TabStop = false;
             this.appoinmentdetails_grpbox.Text = "Appointment Details";
+            this.appoinmentdetails_grpbox.Enter += new System.EventHandler(this.appoinmentdetails_grpbox_Enter);
             // 
             // appoinment_txtbox
             // 
-            this.appoinment_txtbox.Location = new System.Drawing.Point(247, 147);
+            this.appoinment_txtbox.Location = new System.Drawing.Point(196, 141);
             this.appoinment_txtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.appoinment_txtbox.Name = "appoinment_txtbox";
-            this.appoinment_txtbox.Size = new System.Drawing.Size(160, 30);
+            this.appoinment_txtbox.Size = new System.Drawing.Size(160, 26);
             this.appoinment_txtbox.TabIndex = 9;
             // 
             // appoinmentfee_label
@@ -149,17 +152,17 @@
             this.appoinmentfee_label.AutoSize = true;
             this.appoinmentfee_label.Location = new System.Drawing.Point(18, 147);
             this.appoinmentfee_label.Name = "appoinmentfee_label";
-            this.appoinmentfee_label.Size = new System.Drawing.Size(203, 25);
+            this.appoinmentfee_label.Size = new System.Drawing.Size(172, 20);
             this.appoinmentfee_label.TabIndex = 8;
             this.appoinmentfee_label.Text = "Appoinment Fee (Rs.)";
             // 
             // timeslot_combobox
             // 
             this.timeslot_combobox.FormattingEnabled = true;
-            this.timeslot_combobox.Location = new System.Drawing.Point(494, 82);
+            this.timeslot_combobox.Location = new System.Drawing.Point(515, 85);
             this.timeslot_combobox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.timeslot_combobox.Name = "timeslot_combobox";
-            this.timeslot_combobox.Size = new System.Drawing.Size(160, 33);
+            this.timeslot_combobox.Size = new System.Drawing.Size(160, 28);
             this.timeslot_combobox.TabIndex = 7;
             // 
             // timeslot_lbl
@@ -167,24 +170,24 @@
             this.timeslot_lbl.AutoSize = true;
             this.timeslot_lbl.Location = new System.Drawing.Point(371, 85);
             this.timeslot_lbl.Name = "timeslot_lbl";
-            this.timeslot_lbl.Size = new System.Drawing.Size(95, 25);
+            this.timeslot_lbl.Size = new System.Drawing.Size(80, 20);
             this.timeslot_lbl.TabIndex = 6;
             this.timeslot_lbl.Text = "Time Slot";
             // 
             // appoinment_timepicker
             // 
-            this.appoinment_timepicker.Location = new System.Drawing.Point(182, 85);
+            this.appoinment_timepicker.Location = new System.Drawing.Point(196, 87);
             this.appoinment_timepicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.appoinment_timepicker.Name = "appoinment_timepicker";
-            this.appoinment_timepicker.Size = new System.Drawing.Size(160, 30);
+            this.appoinment_timepicker.Size = new System.Drawing.Size(160, 26);
             this.appoinment_timepicker.TabIndex = 5;
             // 
             // appoinmentdate_lbl
             // 
             this.appoinmentdate_lbl.AutoSize = true;
-            this.appoinmentdate_lbl.Location = new System.Drawing.Point(13, 85);
+            this.appoinmentdate_lbl.Location = new System.Drawing.Point(18, 92);
             this.appoinmentdate_lbl.Name = "appoinmentdate_lbl";
-            this.appoinmentdate_lbl.Size = new System.Drawing.Size(163, 25);
+            this.appoinmentdate_lbl.Size = new System.Drawing.Size(138, 20);
             this.appoinmentdate_lbl.TabIndex = 4;
             this.appoinmentdate_lbl.Text = "Appoinment Date";
             // 
@@ -194,41 +197,42 @@
             this.specialization_combobox.Location = new System.Drawing.Point(515, 37);
             this.specialization_combobox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.specialization_combobox.Name = "specialization_combobox";
-            this.specialization_combobox.Size = new System.Drawing.Size(160, 33);
+            this.specialization_combobox.Size = new System.Drawing.Size(160, 28);
             this.specialization_combobox.TabIndex = 3;
             this.specialization_combobox.SelectedIndexChanged += new System.EventHandler(this.specialization_combobox_SelectedIndexChanged);
             // 
             // specialization_lbl
             // 
             this.specialization_lbl.AutoSize = true;
-            this.specialization_lbl.Location = new System.Drawing.Point(364, 40);
+            this.specialization_lbl.Location = new System.Drawing.Point(377, 45);
             this.specialization_lbl.Name = "specialization_lbl";
-            this.specialization_lbl.Size = new System.Drawing.Size(133, 25);
+            this.specialization_lbl.Size = new System.Drawing.Size(113, 20);
             this.specialization_lbl.TabIndex = 2;
             this.specialization_lbl.Text = "Specialization";
             // 
             // doctor_combobox
             // 
             this.doctor_combobox.FormattingEnabled = true;
-            this.doctor_combobox.Location = new System.Drawing.Point(143, 34);
+            this.doctor_combobox.Location = new System.Drawing.Point(196, 42);
             this.doctor_combobox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.doctor_combobox.Name = "doctor_combobox";
-            this.doctor_combobox.Size = new System.Drawing.Size(160, 33);
+            this.doctor_combobox.Size = new System.Drawing.Size(160, 28);
             this.doctor_combobox.TabIndex = 1;
             // 
             // doctor_lbl
             // 
             this.doctor_lbl.AutoSize = true;
-            this.doctor_lbl.Location = new System.Drawing.Point(36, 42);
+            this.doctor_lbl.Location = new System.Drawing.Point(18, 42);
             this.doctor_lbl.Name = "doctor_lbl";
-            this.doctor_lbl.Size = new System.Drawing.Size(69, 25);
+            this.doctor_lbl.Size = new System.Drawing.Size(60, 20);
             this.doctor_lbl.TabIndex = 0;
             this.doctor_lbl.Text = "Doctor";
+            this.doctor_lbl.Click += new System.EventHandler(this.doctor_lbl_Click);
             // 
             // bookappinment_btn
             // 
-            this.bookappinment_btn.BackColor = System.Drawing.Color.GreenYellow;
-            this.bookappinment_btn.Location = new System.Drawing.Point(660, 37);
+            this.bookappinment_btn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bookappinment_btn.Location = new System.Drawing.Point(805, 41);
             this.bookappinment_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bookappinment_btn.Name = "bookappinment_btn";
             this.bookappinment_btn.Size = new System.Drawing.Size(163, 32);
@@ -239,11 +243,11 @@
             // 
             // back
             // 
-            this.back.BackColor = System.Drawing.Color.DarkKhaki;
-            this.back.Location = new System.Drawing.Point(725, 471);
+            this.back.BackColor = System.Drawing.Color.Wheat;
+            this.back.Location = new System.Drawing.Point(805, 506);
             this.back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(98, 43);
+            this.back.Size = new System.Drawing.Size(163, 41);
             this.back.TabIndex = 15;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = false;
@@ -252,7 +256,7 @@
             // btnPay
             // 
             this.btnPay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnPay.Location = new System.Drawing.Point(660, 110);
+            this.btnPay.Location = new System.Drawing.Point(805, 114);
             this.btnPay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPay.Name = "btnPay";
             this.btnPay.Size = new System.Drawing.Size(163, 32);
@@ -263,9 +267,9 @@
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1067, 558);
             this.Controls.Add(this.btnPay);
             this.Controls.Add(this.back);

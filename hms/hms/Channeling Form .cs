@@ -140,5 +140,15 @@ namespace hms
             paymentForm.Show();
             this.Close();
         }
+
+        private void doctor_lbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void appoinmentdetails_grpbox_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

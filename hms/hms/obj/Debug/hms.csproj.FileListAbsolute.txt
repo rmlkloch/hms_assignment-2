@@ -28,3 +28,33 @@ C:\Users\user\Documents\hms\hms_assignment-main - Complete\hms_assignment-main -
 C:\Users\user\Documents\hms\hms_assignment-main - Complete\hms_assignment-main - Complete\hms_assignment-main\hms\hms\obj\Debug\hms.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\hms\hms_assignment-main - Complete\hms_assignment-main - Complete\hms_assignment-main\hms\hms\obj\Debug\hms.exe
 C:\Users\user\Documents\hms\hms_assignment-main - Complete\hms_assignment-main - Complete\hms_assignment-main\hms\hms\obj\Debug\hms.pdb
+D:\hms_assignment-2\hms\hms\bin\Debug\Chanelling DB.mdf
+D:\hms_assignment-2\hms\hms\bin\Debug\Chanelling DB_log.ldf
+D:\hms_assignment-2\hms\hms\bin\Debug\Dignosis DB.mdf
+D:\hms_assignment-2\hms\hms\bin\Debug\Dignosis DB_log.ldf
+D:\hms_assignment-2\hms\hms\bin\Debug\LogIn DB.mdf
+D:\hms_assignment-2\hms\hms\bin\Debug\LogIn DB_log.ldf
+D:\hms_assignment-2\hms\hms\bin\Debug\PatientReg DB.mdf
+D:\hms_assignment-2\hms\hms\bin\Debug\PatientReg DB_log.ldf
+D:\hms_assignment-2\hms\hms\bin\Debug\Payment.mdf
+D:\hms_assignment-2\hms\hms\bin\Debug\Payment_log.ldf
+D:\hms_assignment-2\hms\hms\bin\Debug\StaffReg DB.mdf
+D:\hms_assignment-2\hms\hms\bin\Debug\StaffReg DB_log.ldf
+D:\hms_assignment-2\hms\hms\bin\Debug\hms.exe.config
+D:\hms_assignment-2\hms\hms\bin\Debug\hms.exe
+D:\hms_assignment-2\hms\hms\bin\Debug\hms.pdb
+D:\hms_assignment-2\hms\hms\obj\Debug\hms.csproj.AssemblyReference.cache
+D:\hms_assignment-2\hms\hms\obj\Debug\hms.Form3.resources
+D:\hms_assignment-2\hms\hms\obj\Debug\hms.DiagnosisForm.resources
+D:\hms_assignment-2\hms\hms\obj\Debug\hms.DoctorLogin.resources
+D:\hms_assignment-2\hms\hms\obj\Debug\hms.Form1.resources
+D:\hms_assignment-2\hms\hms\obj\Debug\hms.Form12.resources
+D:\hms_assignment-2\hms\hms\obj\Debug\hms.NurseLogin.resources
+D:\hms_assignment-2\hms\hms\obj\Debug\hms.paymentForm.resources
+D:\hms_assignment-2\hms\hms\obj\Debug\hms.Patient_Registration.resources
+D:\hms_assignment-2\hms\hms\obj\Debug\hms.Properties.Resources.resources
+D:\hms_assignment-2\hms\hms\obj\Debug\hms.staffsignin.resources
+D:\hms_assignment-2\hms\hms\obj\Debug\hms.csproj.GenerateResource.cache
+D:\hms_assignment-2\hms\hms\obj\Debug\hms.csproj.CoreCompileInputs.cache
+D:\hms_assignment-2\hms\hms\obj\Debug\hms.exe
+D:\hms_assignment-2\hms\hms\obj\Debug\hms.pdb
