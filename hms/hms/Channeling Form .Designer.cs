@@ -60,7 +60,7 @@
             this.patientdetails_grpbox.Controls.Add(this.searchpatient_btn);
             this.patientdetails_grpbox.Controls.Add(this.patientid_textbox);
             this.patientdetails_grpbox.Controls.Add(this.patientid_lbl);
-            this.patientdetails_grpbox.Location = new System.Drawing.Point(13, 14);
+            this.patientdetails_grpbox.Location = new System.Drawing.Point(12, 41);
             this.patientdetails_grpbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.patientdetails_grpbox.Name = "patientdetails_grpbox";
             this.patientdetails_grpbox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -129,7 +129,7 @@
             this.appoinmentdetails_grpbox.Controls.Add(this.specialization_lbl);
             this.appoinmentdetails_grpbox.Controls.Add(this.doctor_combobox);
             this.appoinmentdetails_grpbox.Controls.Add(this.doctor_lbl);
-            this.appoinmentdetails_grpbox.Location = new System.Drawing.Point(13, 182);
+            this.appoinmentdetails_grpbox.Location = new System.Drawing.Point(12, 209);
             this.appoinmentdetails_grpbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.appoinmentdetails_grpbox.Name = "appoinmentdetails_grpbox";
             this.appoinmentdetails_grpbox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -232,7 +232,8 @@
             // bookappinment_btn
             // 
             this.bookappinment_btn.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.bookappinment_btn.Location = new System.Drawing.Point(805, 41);
+            this.bookappinment_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bookappinment_btn.Location = new System.Drawing.Point(799, 56);
             this.bookappinment_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bookappinment_btn.Name = "bookappinment_btn";
             this.bookappinment_btn.Size = new System.Drawing.Size(163, 32);
@@ -243,8 +244,9 @@
             // 
             // back
             // 
+            this.back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.back.BackColor = System.Drawing.Color.Wheat;
-            this.back.Location = new System.Drawing.Point(805, 506);
+            this.back.Location = new System.Drawing.Point(799, 506);
             this.back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(163, 41);
@@ -256,7 +258,8 @@
             // btnPay
             // 
             this.btnPay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnPay.Location = new System.Drawing.Point(805, 114);
+            this.btnPay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPay.Location = new System.Drawing.Point(799, 129);
             this.btnPay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPay.Name = "btnPay";
             this.btnPay.Size = new System.Drawing.Size(163, 32);
@@ -270,7 +273,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1067, 558);
+            this.ClientSize = new System.Drawing.Size(974, 558);
             this.Controls.Add(this.btnPay);
             this.Controls.Add(this.back);
             this.Controls.Add(this.bookappinment_btn);

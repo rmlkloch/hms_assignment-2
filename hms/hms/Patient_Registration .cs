@@ -169,11 +169,14 @@ namespace hms
             Form12 mainForm = new Form12();
             mainForm.Show();
             this.Close();
+
         }
 
         private void Patient_Registration_Load(object sender, EventArgs e)
         {
-
+            this.Size = Form1.PreviousFormSize;
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = Form1.PreviousFormLocation;
         }
     }
 

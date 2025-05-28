@@ -129,9 +129,18 @@ namespace hms
 
         private void back_Click(object sender, EventArgs e)
         {
+            Form1.PreviousFormSize = this.Size;
+            Form1.PreviousFormLocation = this.Location;
+
             Form1 mainForm = new Form1();
+
+            mainForm.StartPosition = FormStartPosition.Manual; // Location එක අතින් සෙට් කරන නිසා Manual කරන්න
+            mainForm.Location = Form1.PreviousFormLocation;   // Form1 එකට කලින් Location එක දෙන්න
+            mainForm.Size = Form1.PreviousFormSize;
+
             mainForm.Show();
-            this.Close();
+
+            this.Hide();
         }
 
         private void btnPay_Click(object sender, EventArgs e)

@@ -42,10 +42,11 @@
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(713, 414);
+            this.back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.back.Location = new System.Drawing.Point(675, 416);
             this.back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(75, 23);
+            this.back.Size = new System.Drawing.Size(117, 34);
             this.back.TabIndex = 8;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = true;
@@ -53,9 +54,10 @@
             // 
             // reset
             // 
+            this.reset.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.reset.BackColor = System.Drawing.Color.Salmon;
             this.reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reset.Location = new System.Drawing.Point(341, 272);
+            this.reset.Location = new System.Drawing.Point(404, 270);
             this.reset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.reset.Name = "reset";
             this.reset.Size = new System.Drawing.Size(132, 53);
@@ -66,9 +68,10 @@
             // 
             // login
             // 
+            this.login.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.login.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.login.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login.Location = new System.Drawing.Point(172, 272);
+            this.login.Location = new System.Drawing.Point(235, 270);
             this.login.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.login.Name = "login";
             this.login.Size = new System.Drawing.Size(131, 53);
@@ -79,8 +82,9 @@
             // 
             // Password
             // 
+            this.Password.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Password.Location = new System.Drawing.Point(341, 204);
+            this.Password.Location = new System.Drawing.Point(404, 195);
             this.Password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Password.Name = "Password";
             this.Password.Size = new System.Drawing.Size(149, 34);
@@ -88,9 +92,10 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(167, 210);
+            this.label2.Location = new System.Drawing.Point(230, 201);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 29);
             this.label2.TabIndex = 12;
@@ -98,8 +103,9 @@
             // 
             // staffid
             // 
+            this.staffid.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.staffid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.staffid.Location = new System.Drawing.Point(341, 154);
+            this.staffid.Location = new System.Drawing.Point(404, 145);
             this.staffid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.staffid.Name = "staffid";
             this.staffid.Size = new System.Drawing.Size(149, 34);
@@ -108,9 +114,10 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(167, 158);
+            this.label1.Location = new System.Drawing.Point(230, 149);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 29);
             this.label1.TabIndex = 10;
@@ -118,10 +125,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(77, -3);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(660, 103);
@@ -133,7 +141,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(660, 386);
+            this.ClientSize = new System.Drawing.Size(823, 472);
             this.Controls.Add(this.reset);
             this.Controls.Add(this.login);
             this.Controls.Add(this.Password);

@@ -18,6 +18,13 @@ namespace hms
             InitializeComponent();
         }
 
+        private void NurseLogin_Load(object sender, EventArgs e)
+        {
+            this.Size = Form1.PreviousFormSize;
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = Form1.PreviousFormLocation;
+        }
+
         private void back_Click(object sender, EventArgs e)
         {
             Form12 mainForm = new Form12();
@@ -32,24 +39,6 @@ namespace hms
 
         private void login_Click(object sender, EventArgs e)
         {
-            /*string staffId = staffid.Text;
-            string password = Password.Text;
-
-
-            if (!string.IsNullOrWhiteSpace(staffId) && !string.IsNullOrWhiteSpace(password))
-            {
-                MessageBox.Show("Nurse Login Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                // nurse main form eka open karanna
-                this.Hide();
-                Patient_Registration NurseMainForm = new Patient_Registration();
-                NurseMainForm.Show();
-            }
-            else
-            {
-                MessageBox.Show("Please enter Staff ID and Password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            
-            */
-
             string staffId = staffid.Text.Trim();
             string password = Password.Text;
 
@@ -78,6 +67,19 @@ namespace hms
                         {
                             MessageBox.Show("Doctor login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             // Redirect to Doctor Dashboard
+
+                            Patient_Registration.PreviousFormSize = this.Size;
+                            Patient_Registration.PreviousFormLocation = this.Location;
+
+                            Patient_Registration form1 = new Patient_Registration();
+
+                            form1.StartPosition = FormStartPosition.Manual; // Location එක අතින් සෙට් කරන නිසා Manual කරන්න
+                            form1.Location = Form1.PreviousFormLocation;   // Form1 එකට කලින් Location එක දෙන්න
+                            form1.Size = Form1.PreviousFormSize;
+
+                            form1.Show();
+
+                            this.Hide();
                         }
                         else
                         {
@@ -98,10 +100,7 @@ namespace hms
 
         }
 
-        private void NurseLogin_Load(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void reset_Click(object sender, EventArgs e)
         {
