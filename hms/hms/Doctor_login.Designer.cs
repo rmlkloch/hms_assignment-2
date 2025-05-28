@@ -119,10 +119,10 @@
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(713, 415);
+            this.back.Location = new System.Drawing.Point(696, 415);
             this.back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(75, 23);
+            this.back.Size = new System.Drawing.Size(92, 29);
             this.back.TabIndex = 7;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = true;
@@ -132,7 +132,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(830, 467);
             this.Controls.Add(this.back);
             this.Controls.Add(this.reset);

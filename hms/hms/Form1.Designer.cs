@@ -40,12 +40,12 @@
             // 
             this.ulog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ulog.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ulog.BackColor = System.Drawing.Color.LightGreen;
+            this.ulog.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ulog.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ulog.Location = new System.Drawing.Point(590, 122);
             this.ulog.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ulog.Name = "ulog";
-            this.ulog.Size = new System.Drawing.Size(119, 40);
+            this.ulog.Size = new System.Drawing.Size(122, 40);
             this.ulog.TabIndex = 0;
             this.ulog.Text = "Login";
             this.ulog.UseVisualStyleBackColor = false;
@@ -56,7 +56,7 @@
             // 
             this.usign.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.usign.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.usign.BackColor = System.Drawing.Color.SlateBlue;
+            this.usign.BackColor = System.Drawing.Color.Salmon;
             this.usign.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usign.Location = new System.Drawing.Point(462, 122);
             this.usign.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
