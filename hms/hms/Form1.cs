@@ -17,11 +17,27 @@ namespace hms
             InitializeComponent();
         }
 
+        public static class AppSettings
+        {
+            // DefaultFormSize ekata gannawa
+            public static System.Drawing.Size DefaultFormSize;
+
+            // DefaultFormLocation
+            public static System.Drawing.Point DefaultFormLocation;
+            static AppSettings()
+            {
+                // Working area eke size eka gannawa.
+                DefaultFormSize = Screen.PrimaryScreen.WorkingArea.Size;
+
+                // form eka screen eke left top corner ekata set karanna.
+                DefaultFormLocation = new System.Drawing.Point(0, 0);
+            }
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.Size = Form1.PreviousFormSize;
-            this.StartPosition = FormStartPosition.Manual;
-            this.Location = Form1.PreviousFormLocation;
+            this.Size = AppSettings.DefaultFormSize;
+            this.Location = AppSettings.DefaultFormLocation;
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -77,17 +93,8 @@ namespace hms
 
         private void back_Click(object sender, EventArgs e)
         {
-            Form1.PreviousFormSize = this.Size;
-            Form1.PreviousFormLocation = this.Location;
-
-            Form1 form1 = new Form1();
-
-            form1.StartPosition = FormStartPosition.Manual; // Location එක අතින් සෙට් කරන නිසා Manual කරන්න
-            form1.Location = Form1.PreviousFormLocation;   // Form1 එකට කලින් Location එක දෙන්න
-            form1.Size = Form1.PreviousFormSize;
-
-            form1.Show();
-
+            Form1 firstLoginForm = new Form1();
+            firstLoginForm.Show();
             this.Hide();
 
 

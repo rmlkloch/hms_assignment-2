@@ -17,6 +17,22 @@ namespace hms
         {
             InitializeComponent();
         }
+        public static class AppSettings
+        {
+            // DefaultFormSize ekata gannawa
+            public static System.Drawing.Size DefaultFormSize;
+
+            // DefaultFormLocation
+            public static System.Drawing.Point DefaultFormLocation;
+            static AppSettings()
+            {
+                // Working area eke size eka gannawa.
+                DefaultFormSize = Screen.PrimaryScreen.WorkingArea.Size;
+
+                // form eka screen eke left top corner ekata set karanna.
+                DefaultFormLocation = new System.Drawing.Point(0, 0);
+            }
+        }
 
         private void addmedicine_button_Click(object sender, EventArgs e)
         {
@@ -51,7 +67,7 @@ namespace hms
             }
 
             // Step 3 - Connection string
-            string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\user\Documents\hms\hms_assignment-main - Complete\hms_assignment-main - Complete\hms_assignment-main\hms\hms\Dignosis DB.mdf"";Integrated Security=True";
+            string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\user\Documents\# C #\hms_assignment-2\hms\hms\Dignosis DB.mdf"";Integrated Security=True";
 
             using (SqlConnection con = new SqlConnection(connStr))
             {
@@ -119,19 +135,25 @@ namespace hms
 
         private void back_Click(object sender, EventArgs e)
         {
-            Form12 mainForm = new Form12();
-            mainForm.Show();
-            this.Close();
+            
         }
 
         private void DiagnosisForm_Load(object sender, EventArgs e)
         {
-
+            this.Size = AppSettings.DefaultFormSize;
+            this.Location = AppSettings.DefaultFormLocation;
         }
 
         private void treatmentplan_richtextbox_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form12 mainForm = new Form12();
+            mainForm.Show();
+            this.Close();
         }
     }
 }

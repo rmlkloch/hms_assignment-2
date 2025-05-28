@@ -18,11 +18,27 @@ namespace hms
             InitializeComponent();
         }
 
+        public static class AppSettings
+        {
+            // DefaultFormSize ekata gannawa
+            public static System.Drawing.Size DefaultFormSize;
+
+            // DefaultFormLocation
+            public static System.Drawing.Point DefaultFormLocation;
+            static AppSettings()
+            {
+                // Working area eke size eka gannawa.
+                DefaultFormSize = Screen.PrimaryScreen.WorkingArea.Size;
+
+                // form eka screen eke left top corner ekata set karanna.
+                DefaultFormLocation = new System.Drawing.Point(0, 0);
+            }
+        }
+
         private void NurseLogin_Load(object sender, EventArgs e)
         {
-            this.Size = Form1.PreviousFormSize;
-            this.StartPosition = FormStartPosition.Manual;
-            this.Location = Form1.PreviousFormLocation;
+            this.Size = AppSettings.DefaultFormSize;
+            this.Location = AppSettings.DefaultFormLocation;
         }
 
         private void back_Click(object sender, EventArgs e)
@@ -68,18 +84,7 @@ namespace hms
                             MessageBox.Show("Doctor login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             // Redirect to Doctor Dashboard
 
-                            Patient_Registration.PreviousFormSize = this.Size;
-                            Patient_Registration.PreviousFormLocation = this.Location;
-
-                            Patient_Registration form1 = new Patient_Registration();
-
-                            form1.StartPosition = FormStartPosition.Manual; // Location එක අතින් සෙට් කරන නිසා Manual කරන්න
-                            form1.Location = Form1.PreviousFormLocation;   // Form1 එකට කලින් Location එක දෙන්න
-                            form1.Size = Form1.PreviousFormSize;
-
-                            form1.Show();
-
-                            this.Hide();
+                            
                         }
                         else
                         {

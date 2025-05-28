@@ -18,6 +18,23 @@ namespace hms
             InitializeComponent();
         }
 
+        public static class AppSettings
+        {
+            // DefaultFormSize ekata gannawa
+            public static System.Drawing.Size DefaultFormSize;
+
+            // DefaultFormLocation
+            public static System.Drawing.Point DefaultFormLocation;
+            static AppSettings()
+            {
+                // Working area eke size eka gannawa.
+                DefaultFormSize = Screen.PrimaryScreen.WorkingArea.Size;
+
+                // form eka screen eke left top corner ekata set karanna.
+                DefaultFormLocation = new System.Drawing.Point(0, 0);
+            }
+        }
+
         private void back_Click(object sender, EventArgs e)
         {
             Form12 mainForm = new Form12();
@@ -32,24 +49,7 @@ namespace hms
 
         private void login_Click(object sender, EventArgs e)
         {
-            /* string staffId = staffid.Text;
-             string password = Password.Text;
-
-
-             if (!string.IsNullOrWhiteSpace(staffId) && !string.IsNullOrWhiteSpace(password))
-             {
-                 MessageBox.Show("Doctor Login Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                 // Doctor main form eka open karanna
-
-                 this.Hide();
-                 DiagnosisForm DiagnosisForm = new DiagnosisForm();
-                 DiagnosisForm.Show();
-             }
-             else
-             {
-                 MessageBox.Show("Please enter Staff ID and Password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-             }
-            */
+            
 
             string staffId = staffid.Text.Trim();
             string password = Password.Text;
@@ -63,7 +63,7 @@ namespace hms
 
             try
             {
-                using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\user\Documents\hms\hms_assignment-main - Complete\hms_assignment-main - Complete\hms_assignment-main\hms\hms\LogIn DB.mdf"";Integrated Security=True"))
+                using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\user\Documents\# C #\hms_assignment-2\hms\hms\LogIn DB.mdf"";Integrated Security=True"))
                 {
                     conn.Open();
 
@@ -100,13 +100,19 @@ namespace hms
 
         private void DoctorLogin_Load(object sender, EventArgs e)
         {
-
+            this.Size = AppSettings.DefaultFormSize;
+            this.Location = AppSettings.DefaultFormLocation;
         }
 
         private void reset_Click(object sender, EventArgs e)
         {
             staffid.Text = string.Empty;
             Password.Text = string.Empty;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

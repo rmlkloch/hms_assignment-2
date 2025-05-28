@@ -19,6 +19,23 @@ namespace hms
             InitializeComponent();
         }
 
+        public static class AppSettings
+        {
+            // DefaultFormSize ekata gannawa
+            public static System.Drawing.Size DefaultFormSize;
+
+            // DefaultFormLocation
+            public static System.Drawing.Point DefaultFormLocation;
+            static AppSettings()
+            {
+                // Working area eke size eka gannawa.
+                DefaultFormSize = Screen.PrimaryScreen.WorkingArea.Size;
+
+                // form eka screen eke left top corner ekata set karanna.
+                DefaultFormLocation = new System.Drawing.Point(0, 0);
+            }
+        }
+
         private void id_searchbutton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Search Functionality will be implemented later.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -117,7 +134,7 @@ namespace hms
                 }
 
                 // 3. Database Insert
-                using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\user\Documents\hms\hms_assignment-main - Complete\hms_assignment-main - Complete\hms_assignment-main\hms\hms\PatientReg DB.mdf"";Integrated Security=True"))
+                using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\user\Documents\# C #\hms_assignment-2\hms\hms\PatientReg DB.mdf"";Integrated Security=True"))
                 {
                     string query = @"INSERT INTO PatientReg 
                             (NIC,PatientId, Name, DOB, Age, Gender, MaritalStatus, Address, Phone, Email, Height, Weight, Allergy, AllergyList)
@@ -174,9 +191,8 @@ namespace hms
 
         private void Patient_Registration_Load(object sender, EventArgs e)
         {
-            this.Size = Form1.PreviousFormSize;
-            this.StartPosition = FormStartPosition.Manual;
-            this.Location = Form1.PreviousFormLocation;
+            this.Size = AppSettings.DefaultFormSize;
+            this.Location = AppSettings.DefaultFormLocation;
         }
     }
 

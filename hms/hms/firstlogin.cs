@@ -19,32 +19,39 @@ namespace hms
             InitializeComponent();
         }
 
+        public static class AppSettings
+        {
+            // DefaultFormSize ekata gannawa
+            public static System.Drawing.Size DefaultFormSize;
+
+            // DefaultFormLocation
+            public static System.Drawing.Point DefaultFormLocation;
+            static AppSettings()
+            {
+                // Working area eke size eka gannawa.
+                DefaultFormSize = Screen.PrimaryScreen.WorkingArea.Size;
+
+                // form eka screen eke left top corner ekata set karanna.
+                DefaultFormLocation = new System.Drawing.Point(0, 0);
+            }
+        }
+
         private void usercmb_SelectedIndexChanged(object sender, EventArgs e)
         {
             string selectedUserType = usercmb.SelectedItem.ToString();
 
             if (selectedUserType == "Patient")
             {
-                PreviousFormSize = this.Size;
-                PreviousFormLocation = this.Location;
 
                 Form3 patientForm = new Form3();
-                patientForm.StartPosition = FormStartPosition.Manual;
-                patientForm.Location = PreviousFormLocation;
-                patientForm.Size = PreviousFormSize;
                 patientForm.Show();
                 this.Hide();
             }
             else if (selectedUserType == "Staff")
             {
-                PreviousFormSize = this.Size; 
-                PreviousFormLocation = this.Location;
 
-                Form12 form12 = new Form12();
-                form12.StartPosition = FormStartPosition.Manual;
-                form12.Location = PreviousFormLocation; 
-                form12.Size = PreviousFormSize;
-                form12.Show();
+                Form12 Form12 = new Form12();
+                Form12.Show();
                 this.Hide();
             }
             else
@@ -60,7 +67,8 @@ namespace hms
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            this.Size = AppSettings.DefaultFormSize;
+            this.Location = AppSettings.DefaultFormLocation;
         }
     }
 }

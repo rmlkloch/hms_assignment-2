@@ -19,6 +19,23 @@ namespace hms
             InitializeComponent();
         }
 
+        public static class AppSettings
+        {
+            // DefaultFormSize ekata gannawa
+            public static System.Drawing.Size DefaultFormSize;
+
+            // DefaultFormLocation
+            public static System.Drawing.Point DefaultFormLocation;
+            static AppSettings()
+            {
+                // Working area eke size eka gannawa.
+                DefaultFormSize = Screen.PrimaryScreen.WorkingArea.Size;
+
+                // form eka screen eke left top corner ekata set karanna.
+                DefaultFormLocation = new System.Drawing.Point(0, 0);
+            }
+        }
+
         private void searchpatient_btn_Click(object sender, EventArgs e)
         {
             //backend
@@ -34,6 +51,9 @@ namespace hms
 
             // Sample time slot data (This needs to be loaded from the database)
             timeslot_combobox.Items.AddRange(new string[] { "9:00 AM - 10:00 AM", "10:00 AM - 11:00 AM", "2:00 PM - 3:00 PM" });
+
+            this.Size = AppSettings.DefaultFormSize;
+            this.Location = AppSettings.DefaultFormLocation;
         }
 
         private void specialization_combobox_SelectedIndexChanged(object sender, EventArgs e)

@@ -64,8 +64,8 @@
             // 
             this.back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.back.BackColor = System.Drawing.Color.Wheat;
-            this.back.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.back.Location = new System.Drawing.Point(647, 379);
+            this.back.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back.Location = new System.Drawing.Point(1360, 718);
             this.back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(113, 49);
@@ -78,12 +78,12 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(12, 14);
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(70, 75);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(776, 343);
+            this.tabControl1.Size = new System.Drawing.Size(937, 408);
             this.tabControl1.TabIndex = 16;
             // 
             // tabPage1
@@ -101,7 +101,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(768, 310);
+            this.tabPage1.Size = new System.Drawing.Size(929, 375);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Service Details";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
@@ -109,7 +109,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(77, 28);
+            this.label9.Location = new System.Drawing.Point(83, 62);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(110, 20);
             this.label9.TabIndex = 9;
@@ -118,7 +118,7 @@
             // nextButton
             // 
             this.nextButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.nextButton.Location = new System.Drawing.Point(467, 178);
+            this.nextButton.Location = new System.Drawing.Point(527, 245);
             this.nextButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nextButton.Name = "nextButton";
             this.nextButton.Size = new System.Drawing.Size(99, 52);
@@ -129,7 +129,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(235, 122);
+            this.comboBox2.Location = new System.Drawing.Point(271, 189);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 28);
@@ -144,7 +144,7 @@
             "Channeling",
             "Pharmacy",
             "Reports"});
-            this.comboBox1.Location = new System.Drawing.Point(235, 76);
+            this.comboBox1.Location = new System.Drawing.Point(270, 124);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 28);
@@ -153,7 +153,7 @@
             // 
             // patientNameTextBox
             // 
-            this.patientNameTextBox.Location = new System.Drawing.Point(235, 26);
+            this.patientNameTextBox.Location = new System.Drawing.Point(267, 59);
             this.patientNameTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.patientNameTextBox.Name = "patientNameTextBox";
             this.patientNameTextBox.Size = new System.Drawing.Size(153, 26);
@@ -162,7 +162,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(73, 124);
+            this.label2.Location = new System.Drawing.Point(83, 192);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 20);
             this.label2.TabIndex = 4;
@@ -172,7 +172,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(73, 78);
+            this.label1.Location = new System.Drawing.Point(82, 127);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(111, 20);
             this.label1.TabIndex = 2;
@@ -188,11 +188,11 @@
             this.tabPage2.Controls.Add(this.cashierDetailsGroupBox);
             this.tabPage2.Controls.Add(this.cardDetailsGroupBox);
             this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 29);
+            this.tabPage2.Location = new System.Drawing.Point(4, 38);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(768, 310);
+            this.tabPage2.Size = new System.Drawing.Size(929, 366);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Payment Method";
             // 
@@ -208,6 +208,9 @@
             // paymentMethodComboBox
             // 
             this.paymentMethodComboBox.FormattingEnabled = true;
+            this.paymentMethodComboBox.Items.AddRange(new object[] {
+            "Card",
+            "Cash"});
             this.paymentMethodComboBox.Location = new System.Drawing.Point(181, 30);
             this.paymentMethodComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.paymentMethodComboBox.Name = "paymentMethodComboBox";
@@ -240,7 +243,7 @@
             // 
             this.cashierDetailsGroupBox.Controls.Add(this.cashierIdTextBox);
             this.cashierDetailsGroupBox.Controls.Add(this.label6);
-            this.cashierDetailsGroupBox.Location = new System.Drawing.Point(338, 199);
+            this.cashierDetailsGroupBox.Location = new System.Drawing.Point(338, 33);
             this.cashierDetailsGroupBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cashierDetailsGroupBox.Name = "cashierDetailsGroupBox";
             this.cashierDetailsGroupBox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -275,7 +278,7 @@
             this.cardDetailsGroupBox.Controls.Add(this.cardNumberTextBox);
             this.cardDetailsGroupBox.Controls.Add(this.label4);
             this.cardDetailsGroupBox.Controls.Add(this.label3);
-            this.cardDetailsGroupBox.Location = new System.Drawing.Point(338, 14);
+            this.cardDetailsGroupBox.Location = new System.Drawing.Point(338, 30);
             this.cardDetailsGroupBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cardDetailsGroupBox.Name = "cardDetailsGroupBox";
             this.cardDetailsGroupBox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -341,7 +344,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1688, 824);
             this.Controls.Add(this.back);
             this.Controls.Add(this.tabControl1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

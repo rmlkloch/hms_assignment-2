@@ -27,9 +27,27 @@ namespace hms
             InitializeComponent();
         }
 
+        public static class AppSettings
+        {
+            // DefaultFormSize ekata gannawa
+            public static System.Drawing.Size DefaultFormSize;
+
+            // DefaultFormLocation
+            public static System.Drawing.Point DefaultFormLocation;
+            static AppSettings()
+            {
+                // Working area eke size eka gannawa.
+                DefaultFormSize = Screen.PrimaryScreen.WorkingArea.Size;
+
+                // form eka screen eke left top corner ekata set karanna.
+                DefaultFormLocation = new System.Drawing.Point(0, 0);
+            }
+        }
+
         private void staffsignin_Load(object sender, EventArgs e)
         {
-
+            this.Size = AppSettings.DefaultFormSize;
+            this.Location = AppSettings.DefaultFormLocation;
         }
 
         private void label8_Click(object sender, EventArgs e)
@@ -43,6 +61,9 @@ namespace hms
 
             doctorgb.Visible = (selectedRole == "Doctor");
             nursegb.Visible = (selectedRole == "Nurse");
+            PBD.Visible = (selectedRole == "Doctor");
+            PBN.Visible = (selectedRole == "Nurse");
+            lbrole.Visible = !((selectedRole == "Doctor") || (selectedRole == "Nurse"));
         }
 
         private void back_Click(object sender, EventArgs e)

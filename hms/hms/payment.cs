@@ -20,6 +20,23 @@ namespace hms
             InitializeComponent();
         }
 
+        public static class AppSettings
+        {
+            // DefaultFormSize ekata gannawa
+            public static System.Drawing.Size DefaultFormSize;
+
+            // DefaultFormLocation
+            public static System.Drawing.Point DefaultFormLocation;
+            static AppSettings()
+            {
+                // Working area eke size eka gannawa.
+                DefaultFormSize = Screen.PrimaryScreen.WorkingArea.Size;
+
+                // form eka screen eke left top corner ekata set karanna.
+                DefaultFormLocation = new System.Drawing.Point(0, 0);
+            }
+        }
+
         private void ok_Click(object sender, EventArgs e)
         {
 
@@ -34,7 +51,8 @@ namespace hms
 
         private void patient_Load(object sender, EventArgs e)
         {
-
+            this.Size = AppSettings.DefaultFormSize;
+            this.Location = AppSettings.DefaultFormLocation;
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
@@ -74,7 +92,12 @@ namespace hms
 
         private void paymentMethodComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            paymentMethodComboBox.Items.AddRange(new string[] { "Card", "Cash" });
+            string selectedRole = paymentMethodComboBox.SelectedItem.ToString();
+
+            cardDetailsGroupBox.Visible = (selectedRole == "Card");
+            cashierDetailsGroupBox.Visible = (selectedRole == "Cash");
+
+            //paymentMethodComboBox.Items.AddRange(new string[] { "Card", "Cash" });
         }
 
         private void comboBox1_SelectedIndexChanged_2(object sender, EventArgs e)

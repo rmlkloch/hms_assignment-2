@@ -231,6 +231,7 @@
             // 
             // bookappinment_btn
             // 
+            this.bookappinment_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.bookappinment_btn.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bookappinment_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bookappinment_btn.Location = new System.Drawing.Point(799, 56);
@@ -257,6 +258,7 @@
             // 
             // btnPay
             // 
+            this.btnPay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnPay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPay.Location = new System.Drawing.Point(799, 129);

@@ -51,12 +51,18 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.treatmentplan_richtextbox = new System.Windows.Forms.RichTextBox();
             this.treatmentplan_lbl = new System.Windows.Forms.Label();
-            this.back = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mwdicines_datagrideview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -64,12 +70,12 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(13, 14);
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(36, 36);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(769, 399);
+            this.tabControl1.Size = new System.Drawing.Size(1022, 507);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -82,63 +88,69 @@
             this.tabPage1.Controls.Add(this.patientid_textbox);
             this.tabPage1.Controls.Add(this.patientid_lbl);
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage1.Location = new System.Drawing.Point(4, 29);
+            this.tabPage1.Location = new System.Drawing.Point(4, 38);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(761, 366);
+            this.tabPage1.Size = new System.Drawing.Size(1014, 465);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Patient Details";
             // 
             // datetimepicker
             // 
+            this.datetimepicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datetimepicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.datetimepicker.Location = new System.Drawing.Point(305, 123);
+            this.datetimepicker.Location = new System.Drawing.Point(271, 162);
             this.datetimepicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datetimepicker.Name = "datetimepicker";
-            this.datetimepicker.Size = new System.Drawing.Size(227, 26);
+            this.datetimepicker.Size = new System.Drawing.Size(227, 38);
             this.datetimepicker.TabIndex = 5;
             // 
             // date_lbl
             // 
             this.date_lbl.AutoSize = true;
-            this.date_lbl.Location = new System.Drawing.Point(151, 123);
+            this.date_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date_lbl.Location = new System.Drawing.Point(117, 162);
             this.date_lbl.Name = "date_lbl";
-            this.date_lbl.Size = new System.Drawing.Size(45, 20);
+            this.date_lbl.Size = new System.Drawing.Size(74, 32);
             this.date_lbl.TabIndex = 4;
             this.date_lbl.Text = "Date";
             // 
             // patientname_textbox
             // 
-            this.patientname_textbox.Location = new System.Drawing.Point(305, 74);
+            this.patientname_textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patientname_textbox.Location = new System.Drawing.Point(271, 113);
             this.patientname_textbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.patientname_textbox.Name = "patientname_textbox";
-            this.patientname_textbox.Size = new System.Drawing.Size(227, 26);
+            this.patientname_textbox.Size = new System.Drawing.Size(227, 38);
             this.patientname_textbox.TabIndex = 3;
             // 
             // name_lbl
             // 
             this.name_lbl.AutoSize = true;
-            this.name_lbl.Location = new System.Drawing.Point(151, 74);
+            this.name_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name_lbl.Location = new System.Drawing.Point(117, 113);
             this.name_lbl.Name = "name_lbl";
-            this.name_lbl.Size = new System.Drawing.Size(53, 20);
+            this.name_lbl.Size = new System.Drawing.Size(89, 32);
             this.name_lbl.TabIndex = 2;
             this.name_lbl.Text = "Name";
             // 
             // patientid_textbox
             // 
-            this.patientid_textbox.Location = new System.Drawing.Point(305, 36);
+            this.patientid_textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patientid_textbox.Location = new System.Drawing.Point(271, 75);
             this.patientid_textbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.patientid_textbox.Name = "patientid_textbox";
-            this.patientid_textbox.Size = new System.Drawing.Size(227, 26);
+            this.patientid_textbox.Size = new System.Drawing.Size(227, 38);
             this.patientid_textbox.TabIndex = 1;
             // 
             // patientid_lbl
             // 
             this.patientid_lbl.AutoSize = true;
-            this.patientid_lbl.Location = new System.Drawing.Point(148, 36);
+            this.patientid_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patientid_lbl.Location = new System.Drawing.Point(114, 75);
             this.patientid_lbl.Name = "patientid_lbl";
-            this.patientid_lbl.Size = new System.Drawing.Size(83, 20);
+            this.patientid_lbl.Size = new System.Drawing.Size(138, 32);
             this.patientid_lbl.TabIndex = 0;
             this.patientid_lbl.Text = "Patient ID";
             // 
@@ -149,17 +161,18 @@
             this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Controls.Add(this.symptoms_richtextbox);
             this.tabPage2.Controls.Add(this.symptoms_lbl);
-            this.tabPage2.Location = new System.Drawing.Point(4, 29);
+            this.tabPage2.Location = new System.Drawing.Point(4, 38);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(761, 366);
+            this.tabPage2.Size = new System.Drawing.Size(1014, 465);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Diagnosis Details";
             // 
             // diagnosis_richtextbox
             // 
-            this.diagnosis_richtextbox.Location = new System.Drawing.Point(224, 111);
+            this.diagnosis_richtextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.diagnosis_richtextbox.Location = new System.Drawing.Point(273, 149);
             this.diagnosis_richtextbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.diagnosis_richtextbox.Name = "diagnosis_richtextbox";
             this.diagnosis_richtextbox.Size = new System.Drawing.Size(331, 73);
@@ -169,15 +182,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(64, 111);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(88, 152);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 20);
+            this.label1.Size = new System.Drawing.Size(140, 32);
             this.label1.TabIndex = 2;
             this.label1.Text = "Diagnosis";
             // 
             // symptoms_richtextbox
             // 
-            this.symptoms_richtextbox.Location = new System.Drawing.Point(224, 27);
+            this.symptoms_richtextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.symptoms_richtextbox.Location = new System.Drawing.Point(273, 65);
             this.symptoms_richtextbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.symptoms_richtextbox.Name = "symptoms_richtextbox";
             this.symptoms_richtextbox.Size = new System.Drawing.Size(331, 64);
@@ -187,9 +202,10 @@
             // symptoms_lbl
             // 
             this.symptoms_lbl.AutoSize = true;
-            this.symptoms_lbl.Location = new System.Drawing.Point(61, 27);
+            this.symptoms_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.symptoms_lbl.Location = new System.Drawing.Point(85, 68);
             this.symptoms_lbl.Name = "symptoms_lbl";
-            this.symptoms_lbl.Size = new System.Drawing.Size(88, 20);
+            this.symptoms_lbl.Size = new System.Drawing.Size(147, 32);
             this.symptoms_lbl.TabIndex = 0;
             this.symptoms_lbl.Text = "Symptoms";
             // 
@@ -202,18 +218,19 @@
             this.tabPage3.Controls.Add(this.mwdicines_datagrideview);
             this.tabPage3.Controls.Add(this.treatmentplan_richtextbox);
             this.tabPage3.Controls.Add(this.treatmentplan_lbl);
-            this.tabPage3.Location = new System.Drawing.Point(4, 29);
+            this.tabPage3.Location = new System.Drawing.Point(4, 38);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage3.Size = new System.Drawing.Size(761, 366);
+            this.tabPage3.Size = new System.Drawing.Size(1014, 465);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Treatment Details";
             // 
             // save_btn
             // 
             this.save_btn.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.save_btn.Location = new System.Drawing.Point(536, 272);
+            this.save_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.save_btn.Location = new System.Drawing.Point(586, 304);
             this.save_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.save_btn.Name = "save_btn";
             this.save_btn.Size = new System.Drawing.Size(111, 52);
@@ -225,7 +242,8 @@
             // removemedicine_btn
             // 
             this.removemedicine_btn.BackColor = System.Drawing.Color.Salmon;
-            this.removemedicine_btn.Location = new System.Drawing.Point(358, 272);
+            this.removemedicine_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removemedicine_btn.Location = new System.Drawing.Point(408, 304);
             this.removemedicine_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.removemedicine_btn.Name = "removemedicine_btn";
             this.removemedicine_btn.Size = new System.Drawing.Size(158, 52);
@@ -237,7 +255,8 @@
             // addmedicine_button
             // 
             this.addmedicine_button.BackColor = System.Drawing.Color.MistyRose;
-            this.addmedicine_button.Location = new System.Drawing.Point(219, 272);
+            this.addmedicine_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addmedicine_button.Location = new System.Drawing.Point(269, 304);
             this.addmedicine_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addmedicine_button.Name = "addmedicine_button";
             this.addmedicine_button.Size = new System.Drawing.Size(118, 52);
@@ -253,7 +272,7 @@
             this.Column1,
             this.Column2,
             this.Column3});
-            this.mwdicines_datagrideview.Location = new System.Drawing.Point(219, 119);
+            this.mwdicines_datagrideview.Location = new System.Drawing.Point(269, 151);
             this.mwdicines_datagrideview.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mwdicines_datagrideview.Name = "mwdicines_datagrideview";
             this.mwdicines_datagrideview.RowHeadersWidth = 51;
@@ -284,7 +303,7 @@
             // 
             // treatmentplan_richtextbox
             // 
-            this.treatmentplan_richtextbox.Location = new System.Drawing.Point(219, 16);
+            this.treatmentplan_richtextbox.Location = new System.Drawing.Point(269, 48);
             this.treatmentplan_richtextbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.treatmentplan_richtextbox.Name = "treatmentplan_richtextbox";
             this.treatmentplan_richtextbox.Size = new System.Drawing.Size(428, 80);
@@ -295,32 +314,70 @@
             // treatmentplan_lbl
             // 
             this.treatmentplan_lbl.AutoSize = true;
-            this.treatmentplan_lbl.Location = new System.Drawing.Point(25, 20);
+            this.treatmentplan_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.treatmentplan_lbl.Location = new System.Drawing.Point(59, 48);
             this.treatmentplan_lbl.Name = "treatmentplan_lbl";
-            this.treatmentplan_lbl.Size = new System.Drawing.Size(123, 20);
+            this.treatmentplan_lbl.Size = new System.Drawing.Size(177, 29);
             this.treatmentplan_lbl.TabIndex = 0;
             this.treatmentplan_lbl.Text = "Treatment Plan";
             // 
-            // back
+            // pictureBox2
             // 
-            this.back.BackColor = System.Drawing.Color.Wheat;
-            this.back.Location = new System.Drawing.Point(631, 417);
-            this.back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(133, 42);
-            this.back.TabIndex = 16;
-            this.back.Text = "Back";
-            this.back.UseVisualStyleBackColor = false;
-            this.back.Click += new System.EventHandler(this.back_Click);
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.BackgroundImage = global::hms.Properties.Resources.pngwing_com__6_;
+            this.pictureBox2.Location = new System.Drawing.Point(2, 444);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(1844, 459);
+            this.pictureBox2.TabIndex = 18;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::hms.Properties.Resources.pngwing_com__5_;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(1222, 101);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(236, 223);
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.BackgroundImage = global::hms.Properties.Resources.pngwing_com__6_;
+            this.pictureBox3.Location = new System.Drawing.Point(2, 250);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(1844, 670);
+            this.pictureBox3.TabIndex = 19;
+            this.pictureBox3.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.Wheat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1335, 760);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(155, 52);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // DiagnosisForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(829, 468);
-            this.Controls.Add(this.back);
+            this.ClientSize = new System.Drawing.Size(1839, 905);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox3);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DiagnosisForm";
             this.Text = "Dignosis Form";
@@ -333,6 +390,9 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mwdicines_datagrideview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -362,6 +422,9 @@
         private System.Windows.Forms.Button removemedicine_btn;
         private System.Windows.Forms.Button addmedicine_button;
         private System.Windows.Forms.Button save_btn;
-        private System.Windows.Forms.Button back;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button button1;
     }
 }

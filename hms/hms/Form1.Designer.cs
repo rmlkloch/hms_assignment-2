@@ -42,7 +42,7 @@
             this.ulog.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ulog.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ulog.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ulog.Location = new System.Drawing.Point(590, 122);
+            this.ulog.Location = new System.Drawing.Point(536, 123);
             this.ulog.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ulog.Name = "ulog";
             this.ulog.Size = new System.Drawing.Size(122, 40);
@@ -58,7 +58,7 @@
             this.usign.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.usign.BackColor = System.Drawing.Color.Salmon;
             this.usign.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usign.Location = new System.Drawing.Point(462, 122);
+            this.usign.Location = new System.Drawing.Point(408, 123);
             this.usign.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.usign.Name = "usign";
             this.usign.Size = new System.Drawing.Size(112, 40);
@@ -76,7 +76,7 @@
             this.usercmb.Items.AddRange(new object[] {
             "Doctor",
             "Nurse"});
-            this.usercmb.Location = new System.Drawing.Point(545, 55);
+            this.usercmb.Location = new System.Drawing.Point(491, 56);
             this.usercmb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.usercmb.Name = "usercmb";
             this.usercmb.Size = new System.Drawing.Size(180, 37);
@@ -88,7 +88,7 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(444, 58);
+            this.label4.Location = new System.Drawing.Point(390, 59);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 29);
             this.label4.TabIndex = 10;
@@ -97,11 +97,11 @@
             // back
             // 
             this.back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.back.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.back.Location = new System.Drawing.Point(673, 390);
+            this.back.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.back.Location = new System.Drawing.Point(656, 383);
             this.back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(90, 29);
+            this.back.Size = new System.Drawing.Size(107, 36);
             this.back.TabIndex = 16;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = false;
