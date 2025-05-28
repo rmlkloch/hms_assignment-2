@@ -58,7 +58,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(164, 136);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 29);
+            this.label1.Size = new System.Drawing.Size(76, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Staff ID";
             // 
@@ -68,7 +68,7 @@
             this.staffid.Location = new System.Drawing.Point(290, 133);
             this.staffid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.staffid.Name = "staffid";
-            this.staffid.Size = new System.Drawing.Size(181, 35);
+            this.staffid.Size = new System.Drawing.Size(181, 30);
             this.staffid.TabIndex = 2;
             this.staffid.TextChanged += new System.EventHandler(this.staffid_TextChanged);
             // 
@@ -78,7 +78,7 @@
             this.Password.Location = new System.Drawing.Point(290, 185);
             this.Password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(181, 35);
+            this.Password.Size = new System.Drawing.Size(181, 30);
             this.Password.TabIndex = 4;
             // 
             // label2
@@ -87,13 +87,13 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(164, 188);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 29);
+            this.label2.Size = new System.Drawing.Size(98, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Password";
             // 
             // login
             // 
-            this.login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.login.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login.Location = new System.Drawing.Point(271, 254);
             this.login.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -106,7 +106,7 @@
             // 
             // reset
             // 
-            this.reset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.reset.BackColor = System.Drawing.Color.Salmon;
             this.reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reset.Location = new System.Drawing.Point(410, 253);
             this.reset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -130,9 +130,9 @@
             // 
             // DoctorLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(639, 343);
             this.Controls.Add(this.back);
             this.Controls.Add(this.reset);
