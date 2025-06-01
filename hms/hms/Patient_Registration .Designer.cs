@@ -67,7 +67,6 @@
             this.allergy_lbl = new System.Windows.Forms.Label();
             this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.tbc.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -107,7 +106,6 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPage1.Controls.Add(this.textBox2);
             this.tabPage1.Controls.Add(this.textBox1);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.marstatus_combobox);
@@ -151,11 +149,15 @@
             // marstatus_combobox
             // 
             this.marstatus_combobox.FormattingEnabled = true;
+            this.marstatus_combobox.Items.AddRange(new object[] {
+            "Married",
+            "UnMarried"});
             this.marstatus_combobox.Location = new System.Drawing.Point(621, 220);
             this.marstatus_combobox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.marstatus_combobox.Name = "marstatus_combobox";
             this.marstatus_combobox.Size = new System.Drawing.Size(121, 33);
             this.marstatus_combobox.TabIndex = 12;
+            this.marstatus_combobox.SelectedIndexChanged += new System.EventHandler(this.marstatus_combobox_SelectedIndexChanged);
             // 
             // maritalstatus_label
             // 
@@ -169,6 +171,10 @@
             // gender_combobox
             // 
             this.gender_combobox.FormattingEnabled = true;
+            this.gender_combobox.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Other"});
             this.gender_combobox.Location = new System.Drawing.Point(621, 128);
             this.gender_combobox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gender_combobox.Name = "gender_combobox";
@@ -480,13 +486,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(1669, 829);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(243, 313);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 30);
-            this.textBox2.TabIndex = 15;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Patient_Registration
             // 
@@ -555,6 +555,5 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox2;
     }
 }

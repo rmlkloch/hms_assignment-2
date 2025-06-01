@@ -134,12 +134,12 @@ namespace hms
                 }
 
                 // 3. Database Insert
-                using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\user\Documents\# C #\hms_assignment-2\hms\hms\PatientReg DB.mdf"";Integrated Security=True"))
+                using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\user\Documents\# C #\hms_assignment-3\hms\hms\PatientReg DB.mdf"";Integrated Security=True"))
                 {
                     string query = @"INSERT INTO PatientReg 
                             (NIC,PatientId, Name, DOB, Age, Gender, MaritalStatus, Address, Phone, Email, Height, Weight, Allergy, AllergyList)
                              VALUES
-                            (@PatientId, @Name, @DOB, @Age, @Gender, @MaritalStatus, @Address, @Phone, @Email, @Height, @Weight, @Allergy, @AllergyList)";
+                            (@NIC, @PatientId, @Name, @DOB, @Age, @Gender, @MaritalStatus, @Address, @Phone, @Email, @Height, @Weight, @Allergy, @AllergyList)";
 
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@NIC", NIC);
@@ -193,6 +193,16 @@ namespace hms
         {
             this.Size = AppSettings.DefaultFormSize;
             this.Location = AppSettings.DefaultFormLocation;
+        }
+
+        private void marstatus_combobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

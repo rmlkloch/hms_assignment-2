@@ -38,7 +38,7 @@ namespace hms
 
         private void searchpatient_btn_Click(object sender, EventArgs e)
         {
-            //backend
+            
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -108,7 +108,7 @@ namespace hms
             }
 
             // Step 3 - DB connection
-            string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\user\Documents\hms\hms_assignment-main - Complete\hms_assignment-main - Complete\hms_assignment-main\hms\hms\Chanelling DB.mdf"";Integrated Security=True";
+            string connStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\user\Documents\# C #\hms_assignment-3\hms\hms\Chanelling DB.mdf"";Integrated Security=True";
 
             using (SqlConnection con = new SqlConnection(connStr))
             {

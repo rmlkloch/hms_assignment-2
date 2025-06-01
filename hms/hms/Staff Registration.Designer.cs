@@ -42,6 +42,11 @@
             this.dob_picker = new System.Windows.Forms.DateTimePicker();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.cpass = new System.Windows.Forms.TextBox();
+            this.cpassw = new System.Windows.Forms.Label();
+            this.pass = new System.Windows.Forms.TextBox();
+            this.passw = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -50,6 +55,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.cmbDepartment = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lbrole = new System.Windows.Forms.Label();
             this.nursegb = new System.Windows.Forms.GroupBox();
             this.txtexperience = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -64,26 +70,24 @@
             this.mln = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.PBD = new System.Windows.Forms.PictureBox();
+            this.PBN = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.clear = new System.Windows.Forms.Button();
             this.save = new System.Windows.Forms.Button();
             this.browse = new System.Windows.Forms.Button();
-            this.back = new System.Windows.Forms.Button();
-            this.lbrole = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.PBD = new System.Windows.Forms.PictureBox();
-            this.PBN = new System.Windows.Forms.PictureBox();
             this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.back = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.nursegb.SuspendLayout();
             this.doctorgb.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBN)).BeginInit();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -91,7 +95,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(533, 79);
+            this.label1.Location = new System.Drawing.Point(575, 79);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 20);
             this.label1.TabIndex = 0;
@@ -99,7 +103,7 @@
             // 
             // txtname
             // 
-            this.txtname.Location = new System.Drawing.Point(653, 74);
+            this.txtname.Location = new System.Drawing.Point(695, 74);
             this.txtname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtname.Name = "txtname";
             this.txtname.Size = new System.Drawing.Size(245, 26);
@@ -121,7 +125,7 @@
             this.cmbrole.Items.AddRange(new object[] {
             "Doctor",
             "Nurse"});
-            this.cmbrole.Location = new System.Drawing.Point(188, 157);
+            this.cmbrole.Location = new System.Drawing.Point(256, 157);
             this.cmbrole.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbrole.Name = "cmbrole";
             this.cmbrole.Size = new System.Drawing.Size(214, 28);
@@ -131,7 +135,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(533, 160);
+            this.label3.Location = new System.Drawing.Point(575, 160);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 20);
             this.label3.TabIndex = 3;
@@ -139,7 +143,7 @@
             // 
             // txtphone
             // 
-            this.txtphone.Location = new System.Drawing.Point(186, 238);
+            this.txtphone.Location = new System.Drawing.Point(256, 239);
             this.txtphone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtphone.Name = "txtphone";
             this.txtphone.Size = new System.Drawing.Size(214, 26);
@@ -161,7 +165,7 @@
             "Male",
             "Female",
             "Other"});
-            this.cmbgender.Location = new System.Drawing.Point(188, 330);
+            this.cmbgender.Location = new System.Drawing.Point(256, 330);
             this.cmbgender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbgender.Name = "cmbgender";
             this.cmbgender.Size = new System.Drawing.Size(214, 28);
@@ -187,7 +191,7 @@
             // 
             // dob_picker
             // 
-            this.dob_picker.Location = new System.Drawing.Point(210, 416);
+            this.dob_picker.Location = new System.Drawing.Point(256, 417);
             this.dob_picker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dob_picker.Name = "dob_picker";
             this.dob_picker.Size = new System.Drawing.Size(200, 26);
@@ -209,6 +213,10 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage1.Controls.Add(this.cpass);
+            this.tabPage1.Controls.Add(this.cpassw);
+            this.tabPage1.Controls.Add(this.pass);
+            this.tabPage1.Controls.Add(this.passw);
             this.tabPage1.Controls.Add(this.pictureBox2);
             this.tabPage1.Controls.Add(this.txtEmail);
             this.tabPage1.Controls.Add(this.label16);
@@ -237,9 +245,51 @@
             this.tabPage1.Text = "General Information";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // cpass
+            // 
+            this.cpass.Location = new System.Drawing.Point(256, 541);
+            this.cpass.Name = "cpass";
+            this.cpass.Size = new System.Drawing.Size(200, 26);
+            this.cpass.TabIndex = 22;
+            // 
+            // cpassw
+            // 
+            this.cpassw.AutoSize = true;
+            this.cpassw.Location = new System.Drawing.Point(103, 544);
+            this.cpassw.Name = "cpassw";
+            this.cpassw.Size = new System.Drawing.Size(147, 20);
+            this.cpassw.TabIndex = 21;
+            this.cpassw.Text = "Confirm Password";
+            // 
+            // pass
+            // 
+            this.pass.Location = new System.Drawing.Point(256, 476);
+            this.pass.Name = "pass";
+            this.pass.Size = new System.Drawing.Size(200, 26);
+            this.pass.TabIndex = 20;
+            // 
+            // passw
+            // 
+            this.passw.AutoSize = true;
+            this.passw.Location = new System.Drawing.Point(103, 479);
+            this.passw.Name = "passw";
+            this.passw.Size = new System.Drawing.Size(83, 20);
+            this.passw.TabIndex = 19;
+            this.passw.Text = "Password";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::hms.Properties.Resources.pngwing_com__2_;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(1005, 112);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(291, 267);
+            this.pictureBox2.TabIndex = 18;
+            this.pictureBox2.TabStop = false;
+            // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(653, 245);
+            this.txtEmail.Location = new System.Drawing.Point(695, 245);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(242, 26);
@@ -248,7 +298,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(535, 245);
+            this.label16.Location = new System.Drawing.Point(577, 245);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(51, 20);
             this.label16.TabIndex = 16;
@@ -266,7 +316,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(181, 72);
+            this.textBox1.Location = new System.Drawing.Point(256, 73);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(214, 26);
@@ -274,7 +324,7 @@
             // 
             // joindate_picker
             // 
-            this.joindate_picker.Location = new System.Drawing.Point(641, 336);
+            this.joindate_picker.Location = new System.Drawing.Point(683, 336);
             this.joindate_picker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.joindate_picker.Name = "joindate_picker";
             this.joindate_picker.Size = new System.Drawing.Size(242, 26);
@@ -283,7 +333,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(535, 338);
+            this.label7.Location = new System.Drawing.Point(577, 338);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(81, 20);
             this.label7.TabIndex = 12;
@@ -298,7 +348,7 @@
             "General Surgery(ශල්‍ය වෛද්‍ය)",
             "Ophthalmology(අක්ෂි රෝග)",
             "Cardiology(හෘද රෝග)"});
-            this.cmbDepartment.Location = new System.Drawing.Point(656, 150);
+            this.cmbDepartment.Location = new System.Drawing.Point(698, 150);
             this.cmbDepartment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbDepartment.Name = "cmbDepartment";
             this.cmbDepartment.Size = new System.Drawing.Size(242, 28);
@@ -320,6 +370,17 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Role-Specific Fields";
             // 
+            // lbrole
+            // 
+            this.lbrole.AutoSize = true;
+            this.lbrole.Font = new System.Drawing.Font("Montserrat ExtraBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbrole.Location = new System.Drawing.Point(103, 76);
+            this.lbrole.Name = "lbrole";
+            this.lbrole.Size = new System.Drawing.Size(515, 36);
+            this.lbrole.TabIndex = 17;
+            this.lbrole.Text = "Please Selct Your Role First IN First Page";
+            this.lbrole.Visible = false;
+            // 
             // nursegb
             // 
             this.nursegb.Controls.Add(this.txtexperience);
@@ -336,7 +397,6 @@
             this.nursegb.Size = new System.Drawing.Size(532, 185);
             this.nursegb.TabIndex = 11;
             this.nursegb.TabStop = false;
-            this.nursegb.Text = "NursegroupBox";
             this.nursegb.Visible = false;
             // 
             // txtexperience
@@ -421,7 +481,6 @@
             this.doctorgb.Size = new System.Drawing.Size(585, 146);
             this.doctorgb.TabIndex = 10;
             this.doctorgb.TabStop = false;
-            this.doctorgb.Text = "DoctorgroupBox";
             this.doctorgb.Visible = false;
             // 
             // cmbspecialization
@@ -475,6 +534,28 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Doctor";
             // 
+            // PBD
+            // 
+            this.PBD.BackgroundImage = global::hms.Properties.Resources.pngwing_com__3_;
+            this.PBD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PBD.Location = new System.Drawing.Point(830, 76);
+            this.PBD.Name = "PBD";
+            this.PBD.Size = new System.Drawing.Size(205, 267);
+            this.PBD.TabIndex = 16;
+            this.PBD.TabStop = false;
+            this.PBD.Visible = false;
+            // 
+            // PBN
+            // 
+            this.PBN.BackgroundImage = global::hms.Properties.Resources.pngwing_com__4_;
+            this.PBN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PBN.Location = new System.Drawing.Point(830, 76);
+            this.PBN.Name = "PBN";
+            this.PBN.Size = new System.Drawing.Size(205, 267);
+            this.PBN.TabIndex = 15;
+            this.PBN.TabStop = false;
+            this.PBN.Visible = false;
+            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -525,6 +606,18 @@
             this.browse.UseVisualStyleBackColor = false;
             this.browse.Click += new System.EventHandler(this.browse_Click);
             // 
+            // pictureBox
+            // 
+            this.pictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox.BackgroundImage")));
+            this.pictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox.Location = new System.Drawing.Point(139, 112);
+            this.pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(302, 274);
+            this.pictureBox.TabIndex = 0;
+            this.pictureBox.TabStop = false;
+            this.pictureBox.Click += new System.EventHandler(this.pictureBox_Click);
+            // 
             // back
             // 
             this.back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -537,59 +630,6 @@
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = false;
             this.back.Click += new System.EventHandler(this.back_Click);
-            // 
-            // lbrole
-            // 
-            this.lbrole.AutoSize = true;
-            this.lbrole.Font = new System.Drawing.Font("Montserrat ExtraBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbrole.Location = new System.Drawing.Point(103, 76);
-            this.lbrole.Name = "lbrole";
-            this.lbrole.Size = new System.Drawing.Size(515, 36);
-            this.lbrole.TabIndex = 17;
-            this.lbrole.Text = "Please Selct Your Role First IN First Page";
-            this.lbrole.Visible = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::hms.Properties.Resources.pngwing_com__2_;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(1005, 112);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(291, 267);
-            this.pictureBox2.TabIndex = 18;
-            this.pictureBox2.TabStop = false;
-            // 
-            // PBD
-            // 
-            this.PBD.BackgroundImage = global::hms.Properties.Resources.pngwing_com__3_;
-            this.PBD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PBD.Location = new System.Drawing.Point(830, 76);
-            this.PBD.Name = "PBD";
-            this.PBD.Size = new System.Drawing.Size(205, 267);
-            this.PBD.TabIndex = 16;
-            this.PBD.TabStop = false;
-            this.PBD.Visible = false;
-            // 
-            // PBN
-            // 
-            this.PBN.BackgroundImage = global::hms.Properties.Resources.pngwing_com__4_;
-            this.PBN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PBN.Location = new System.Drawing.Point(830, 76);
-            this.PBN.Name = "PBN";
-            this.PBN.Size = new System.Drawing.Size(205, 267);
-            this.PBN.TabIndex = 15;
-            this.PBN.TabStop = false;
-            this.PBN.Visible = false;
-            // 
-            // pictureBox
-            // 
-            this.pictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox.BackgroundImage")));
-            this.pictureBox.Location = new System.Drawing.Point(139, 112);
-            this.pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(302, 274);
-            this.pictureBox.TabIndex = 0;
-            this.pictureBox.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -620,16 +660,16 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.nursegb.ResumeLayout(false);
             this.nursegb.PerformLayout();
             this.doctorgb.ResumeLayout(false);
             this.doctorgb.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBN)).EndInit();
+            this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -684,5 +724,9 @@
         private System.Windows.Forms.Label lbrole;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TextBox cpass;
+        private System.Windows.Forms.Label cpassw;
+        private System.Windows.Forms.TextBox pass;
+        private System.Windows.Forms.Label passw;
     }
 }

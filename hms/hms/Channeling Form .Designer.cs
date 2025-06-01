@@ -31,7 +31,6 @@
             this.patientdetails_grpbox = new System.Windows.Forms.GroupBox();
             this.name_txtbox = new System.Windows.Forms.TextBox();
             this.name_lbl = new System.Windows.Forms.Label();
-            this.searchpatient_btn = new System.Windows.Forms.Button();
             this.patientid_textbox = new System.Windows.Forms.TextBox();
             this.patientid_lbl = new System.Windows.Forms.Label();
             this.appoinmentdetails_grpbox = new System.Windows.Forms.GroupBox();
@@ -57,7 +56,6 @@
             this.patientdetails_grpbox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.patientdetails_grpbox.Controls.Add(this.name_txtbox);
             this.patientdetails_grpbox.Controls.Add(this.name_lbl);
-            this.patientdetails_grpbox.Controls.Add(this.searchpatient_btn);
             this.patientdetails_grpbox.Controls.Add(this.patientid_textbox);
             this.patientdetails_grpbox.Controls.Add(this.patientid_lbl);
             this.patientdetails_grpbox.Location = new System.Drawing.Point(12, 41);
@@ -86,18 +84,6 @@
             this.name_lbl.Size = new System.Drawing.Size(53, 20);
             this.name_lbl.TabIndex = 4;
             this.name_lbl.Text = "Name";
-            // 
-            // searchpatient_btn
-            // 
-            this.searchpatient_btn.BackColor = System.Drawing.Color.MistyRose;
-            this.searchpatient_btn.Location = new System.Drawing.Point(330, 54);
-            this.searchpatient_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.searchpatient_btn.Name = "searchpatient_btn";
-            this.searchpatient_btn.Size = new System.Drawing.Size(160, 39);
-            this.searchpatient_btn.TabIndex = 3;
-            this.searchpatient_btn.Text = "Search Patient";
-            this.searchpatient_btn.UseVisualStyleBackColor = false;
-            this.searchpatient_btn.Click += new System.EventHandler(this.searchpatient_btn_Click);
             // 
             // patientid_textbox
             // 
@@ -301,7 +287,6 @@
         private System.Windows.Forms.Label patientid_lbl;
         private System.Windows.Forms.TextBox name_txtbox;
         private System.Windows.Forms.Label name_lbl;
-        private System.Windows.Forms.Button searchpatient_btn;
         private System.Windows.Forms.GroupBox appoinmentdetails_grpbox;
         private System.Windows.Forms.Label specialization_lbl;
         private System.Windows.Forms.ComboBox doctor_combobox;
